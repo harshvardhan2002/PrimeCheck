@@ -10,7 +10,7 @@ namespace PrimeCheck
     {
         static void Main(string[] args)
         {
-			int number, count = 0;
+			int number, countDivisor = 0;
             Console.WriteLine("Write the num to check: ");
             number = Convert.ToInt32(Console.ReadLine());
 
@@ -22,11 +22,11 @@ namespace PrimeCheck
             {
                 if (number % i == 0)
                 {
-                    count++;
+                    countDivisor++;
                     break;
                 }
             }
-            if (count == 0)
+            if (countDivisor == 0)
             {
                 Console.WriteLine("num is a prime num");
             }
